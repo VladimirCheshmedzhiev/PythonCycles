@@ -1,0 +1,12 @@
+floor = int(input())
+rooms = int(input())
+
+for iteration in range(floor, 0, -1):
+    for i in range(0, rooms):
+        if iteration == floor:
+            print(f"L{iteration}{i}", end=' ')
+        elif iteration % 2 == 0:
+            print(f"O{iteration}{i}", end=' ')
+        else:
+            print(f"A{iteration}{i}", end=' ')
+    print()
